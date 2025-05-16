@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ABHIJITH AJ </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+
+
+  <label class="dark-toggle">
+  🌙
+  <input type="checkbox" id="darkModeToggle">
+  <span class="slider"></span>
+</label>
+
+
+
+    <a href="/">About</a>
+    <a href="/projects">Projects</a>
+    <a href="/contact">Contact</a>
+     <a href="/myworks">myworks</a>
+</nav>
+
+
+
+      
+
+
+
+
+
+
+  </nav>
+   <main class="about-container">
+    <section class="intro">
+      <img src="images/profile.jpg" alt="Profile Photo" class="profile-photo" />
+      <div class="intro-text">
+        <h1>Hello, I'm  ABHIJITH AJ <div ABHIJITH="" AJ=""></div></h1>
+        <p>
+          I'm a video editor and creative visual artist with a passion for storytelling. I specialize in editing cinematic videos, promotional content, and creative photo visuals.
+        </p>
+        <a href="cv/my-cv.pdf" class="cv-button" download>📄 Download My CV</a>
+      </div>
+    </section>
+
+    <section class="editor-section">
+      <h2>🎬 Editor</h2>
+      <p>
+        As a passionate video editor, I bring stories to life through compelling visuals and sound. With expertise in Adobe Premiere Pro, After Effects, and DaVinci Resolve, I ensure every cut, transition, and effect enhances the narrative. My work spans short films, documentaries, music videos, and branded content.
+      </p>
+      </section>
+
+
+<section class="contact-section">
+  <h2>📬 Let's Connect</h2>
+  <p>Feel free to reach out or follow me on social media!</p>
+  
+  <div class="social-buttons">
+    <a href="mailto:your.ajstorm2008@gmail.com.com" class="social-btn email">✉️ Email</a>
+    <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-btn linkedin">🔗 LinkedIn</a>
+    <a href="https://github.com/yourusername" target="_blank" class="social-btn github">🐙 GitHub</a>
+    <a href="https://www.instagram.com/abhijith__aj__storm" target="_blank" class="social-btn instagram">📸 Instagram</a>
+    <a href="https://youtube.com/yourusername" target="_blank" class="social-btn twitter">🐦 Twitter</a>
+    <a href="https://wa.me/+918590341174" target="_blank" class="social-btn whatsapp">💬 WhatsApp</a>
+  </div>
+</section>
+</main>
+
+
+<script>
+  const toggle = document.getElementById('darkModeToggle');
+  const isDark = localStorage.getItem('darkMode') === 'true';
+
+  if (isDark) {
+    document.body.classList.add('dark');
+    toggle.checked = true;
+  }
+
+  toggle.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+    localStorage.setItem('darkMode', document.body.classList.contains('dark'));
+  });
+</script>
+
+
+
+
+
+
+
+</body> 
