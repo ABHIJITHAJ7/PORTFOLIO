@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const Contact = require('/Contact');
+const Contact = require('models/Contact');
 const path = require('path');
 const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
@@ -10,7 +10,7 @@ const app = express();
 const PORT = 3000;
 
 
-mongoose.connect(process.env.MONGODB_URI, {
+mongoose.connect("mongodb+srv://ajstorm2008:abhijithaj@cluster0.ni595pm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
