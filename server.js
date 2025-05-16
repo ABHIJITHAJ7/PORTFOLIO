@@ -10,10 +10,10 @@ const app = express();
 const PORT = 3000;
 
 
-mongoose.connect("mongodb+srv://ajstorm2008:abhijithaj@cluster0.ni595pm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
+mongoose.connect('mongodb://localhost:27017/portfolioDB')
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.error('MongoDB connection error:', err));
+
 
 const Project = mongoose.model('Project', {
   title: String,
